@@ -7,11 +7,26 @@
         <File name="MyFile" fileName="all.log" immediateFlush="false" append="false">
             <PatternLayout pattern="%d{yyy-MM-dd HH:mm:ss.SSS} [%t] %-5level %logger{36} - %msg%n"/>
         </File>
+        <File name="MyFile1" fileName="all1.log" immediateFlush="false" append="true">
+            <PatternLayout pattern="%d{yyy-MM-dd HH:mm:ss.SSS} [%t] %-5level %logger{36} - %msg%n"/>
+        </File>
+        <File name="async" fileName="async.log" immediateFlush="false" append="true">
+            <PatternLayout pattern="%d{yyy-MM-dd HH:mm:ss.SSS} [%t] %-5level %logger{36} - %msg%n"/>
+        </File>
+
+        <Async name="scribeAsyncAppender" errorRef="async" bufferSize="102400" blocking="false">
+            <AppenderRef ref="async"/>
+        </Async>
     </Appenders>
     <Loggers>
         <Root level="debug">
-            <AppenderRef ref="Console" />
+            <!--<AppenderRef ref="Console" />-->
             <AppenderRef ref="MyFile"/>
+            <AppenderRef ref="scribeAsyncAppender"/>
         </Root>
+        <Logger name="com.gxf.slf4j.HelloSlf4j" level="debug">
+            <AppenderRef ref="Console"/>
+            <AppenderRef ref="MyFile1"/>
+        </Logger>
     </Loggers>
 </Configuration>

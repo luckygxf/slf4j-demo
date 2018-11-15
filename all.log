@@ -1,1 +1,10 @@
-2018-08-24 11:10:24.194 [main] INFO  com.gxf.slf4j.HelloSlf4j - Hello Slf4j
+2018-11-15 15:06:07.136 [main] DEBUG com.gxf.slf4j.HelloSlf4j - Hello Slf4j
+2018-11-15 15:06:07.141 [main] DEBUG com.gxf.slf4j.HelloSlf4j - Hello Slf4j
+2018-11-15 15:06:07.142 [main] DEBUG com.gxf.slf4j.HelloSlf4j - Hello Slf4j
+2018-11-15 15:06:07.142 [main] DEBUG com.gxf.slf4j.HelloSlf4j - Hello Slf4j
+2018-11-15 15:06:07.142 [main] DEBUG com.gxf.slf4j.HelloSlf4j - Hello Slf4j
+2018-11-15 15:06:07.142 [main] DEBUG com.gxf.slf4j.HelloSlf4j - Hello Slf4j
+2018-11-15 15:06:07.143 [main] DEBUG com.gxf.slf4j.HelloSlf4j - Hello Slf4j
+2018-11-15 15:06:07.143 [main] DEBUG com.gxf.slf4j.HelloSlf4j - Hello Slf4j
+2018-11-15 15:06:07.143 [main] DEBUG com.gxf.slf4j.HelloSlf4j - Hello Slf4j
+2018-11-15 15:06:07.144 [main] DEBUG com.gxf.slf4j.HelloSlf4j - Hello Slf4j

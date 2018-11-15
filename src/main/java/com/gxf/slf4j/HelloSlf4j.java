@@ -10,7 +10,9 @@ import org.slf4j.LoggerFactory;
  **/
 public class HelloSlf4j {
     public static void main(String[] args) {
-        Logger logger = LoggerFactory.getLogger(HelloSlf4j.class);
-        logger.info("Hello Slf4j");
+        for(int i = 0; i < 10; i++){
+            Logger logger = LoggerFactory.getLogger(HelloSlf4j.class);
+            logger.debug("Hello Slf4j");
+        }
     }
 }
